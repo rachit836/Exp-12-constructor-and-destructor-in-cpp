@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class book{
+    int price;
+    string name;
+    string author;
+
+public:
+    book(string n,int a,string b){
+        name = n;
+        price = a;
+        author = b;
+    }
+
+    book(const book &s){
+        name = s.name;
+        price = s.price;
+        author = s.author;
+    }
+
+    void printdata() {
+        cout<<"name : "<<name<<endl<<"price : "<<price<<endl<<"author : "<<author<<endl;
+    }
+};
+
+int main() {
+    cout<<"parameterized constructor called"<<endl;
+    book s1("hipocket",1000,"rachit");
+    book s2=s1;
+    s1.printdata();
+    cout<<"copy constructor called"<<endl;
+    s2.printdata();
+    return 0;
+}
