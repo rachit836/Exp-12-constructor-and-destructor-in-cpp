@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Date {
+    int day, month, year;
+
+public:
+    Date(int d, int m, int y) {
+        day = d;
+        month = m;
+        year = y;
+    }
+
+    void printDate() {
+        cout << "The date you entered is: " 
+             << day << "/" << month << "/" << year << endl;
+    }
+};
+
+int main() {
+    int d, m, y;
+    cout << "Enter day: ";
+    cin >> d;
+    cout << "Enter month: ";
+    cin >> m;
+    cout << "Enter year: ";
+    cin >> y;
+
+    Date userDate(d, m, y);
+    userDate.printDate();
+
+    return 0;
+}
