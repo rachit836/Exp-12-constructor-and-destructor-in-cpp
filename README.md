@@ -16,7 +16,7 @@ To implement a default constructor inside the class.
 - It takes no arguments and assigns default values to data members.  
 
 **Syntax:**  
-```cpp
+
 ClassName() {
    // initialization
 }
