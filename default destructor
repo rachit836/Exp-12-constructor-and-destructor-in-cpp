@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class date{
+    
+
+public:
+int d=26;
+int m=8;
+int y=2025;
+ 
+    ~date(){
+        cout<<"destructor called"<<endl;
+    }
+    
+};
+
+int main() {
+    date d1,d2,d3,d4;
+    int  i;
+    for(i=0;i<4;i++)
+    {
+        date d1;
+        
+    }
+    
+    return 0;
+}
