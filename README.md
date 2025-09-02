@@ -21,7 +21,7 @@ ClassName() {
    // initialization
 }
 
-Logic:
+## Logic:
 
 Define constructor inside the class.
 
@@ -33,12 +33,12 @@ Create an object → constructor is executed.
 
 ---
 
-2. Default Constructor (Outside Class)
+# 2. Default Constructor (Outside Class)
 
-Aim:
+## Aim:
 To implement a default constructor outside the class.
 
-Theory:
+## Theory:
 
 A constructor can be declared inside the class but defined outside using the scope resolution operator ::.
 
@@ -49,7 +49,7 @@ ClassName::ClassName() {
    // initialization
 }
 
-Logic:
+## Logic:
 
 Declare constructor in the class.
 
@@ -61,12 +61,12 @@ Initialize members with default values.
 
 ---
 
-3. Parameterized Constructor
+# 3. Parameterized Constructor
 
-Aim:
+## Aim:
 To implement a parameterized constructor.
 
-Theory:
+## Theory:
 
 A parameterized constructor takes arguments.
 
@@ -79,7 +79,7 @@ ClassName(type arg1, type arg2) {
    // initialization
 }
 
-Logic:
+## Logic:
 
 Pass values while creating object.
 
@@ -91,12 +91,12 @@ Different objects can be initialized with different values.
 
 ---
 
-4. Copy Constructor
+# 4. Copy Constructor
 
-Aim:
+## Aim:
 To implement a copy constructor.
 
-Theory:
+## Theory:
 
 A copy constructor initializes a new object as a copy of an existing object.
 
@@ -109,7 +109,7 @@ ClassName(const ClassName &obj) {
    // copy values
 }
 
-Logic:
+## Logic:
 
 Copy constructor receives another object as input.
 
@@ -121,12 +121,12 @@ Used when creating duplicate objects.
 
 ---
 
-5. Copy Constructor (Q2 – Multiple Attributes)
+# 5. Copy Constructor (Q2 – Multiple Attributes)
 
-Aim:
+## Aim:
 To implement a copy constructor for objects having multiple attributes (e.g., name, price, author).
 
-Logic:
+## Logic:
 
 Define a parameterized constructor to initialize multiple values.
 
@@ -140,12 +140,12 @@ Demonstrates deep/shallow copy behavior.
 
 ---
 
-6. Destructor
+# 6. Destructor
 
-Aim:
+## Aim:
 To implement a destructor in C++.
 
-Theory:
+## Theory:
 
 Destructor is a special function called automatically when an object goes out of scope.
 
@@ -160,7 +160,7 @@ Syntax:
    // cleanup
 }
 
-Logic:
+## Logic:
 
 Define destructor inside the class.
 
