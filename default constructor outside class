@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class student {
+    int date;
+    int month;
+    int year;
+
+public:
+    student();       
+    void display();    
+};
+
+student::student() {
+    cout << "Enter today's date: ";
+    cin >> date;
+    cout << "Enter month: ";
+    cin >> month;
+    cout << "Enter year: ";
+    cin >> year;
+}
+
+void student::display() {
+    cout << "\nDate: " << date << "/" << month << "/" << year << endl;
+}
+
+int main() {
+    student s;   
+    s.display(); 
+    return 0;
+}
