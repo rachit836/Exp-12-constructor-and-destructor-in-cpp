@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class student {
+    int age;
+    string name;
+
+public:
+    // Parameterized constructor
+    student(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Copy constructor
+    student(const student &s) {
+        name = s.name;
+        age = s.age;
+    }
+
+    void printdata() {
+        cout << "Name: " << name << endl
+             << "Age: " << age << endl;
+    }
+};
+
+int main() {
+    cout << "Parameterized constructor called" << endl;
+    student s1("Rachit", 20);
+
+    student s2 = s1; 
+
+    s1.printdata();
+
+    cout << "Copy constructor called" << endl;
+    s2.printdata();
+
+    return 0;
+}
